@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+     <bean id="car1" class="setter_injection.Car">
+     <property name="engine" ref="engine"/>
+     </bean>
+    
+    <bean id="engine" class="setter_injection.Engine">
+        <property name="type" value="V-8"></property>
+    </bean>
+
+    </beans>
